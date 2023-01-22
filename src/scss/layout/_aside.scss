@@ -1,0 +1,13 @@
+.aside {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height: 100vh;
+    &__section {
+      display: flex;
+      justify-content: space-between;
+      background-color: aquamarine;
+    }
+  }
+}

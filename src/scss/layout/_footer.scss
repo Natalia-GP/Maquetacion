@@ -3,8 +3,12 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: $text-font;
-  flex-direction: column;
   color: $font-links-color;
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   &__nav {
     display: flex;
     justify-content: center;
@@ -12,10 +16,13 @@
     &--link {
       display: flex;
       justify-content: space-around;
-      width: 10rem;
+      width: 80vw;
       padding-top: 1rem;
       padding-bottom: 1rem;
       background-color: $link-color;
+      @include desktop {
+        width: 20vw;
+      }
     }
   }
 

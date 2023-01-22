@@ -2,13 +2,24 @@
   display: flex;
   flex-direction: column;
   font-family: $text-font;
+  background-color: $primary-color;
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   &__title {
     display: flex;
     justify-content: center;
-    background-color: $primary-color;
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+    @include desktop {
+      display: flex;
+      justify-content: left;
+      width: 50%;
+    }
 
     &--logo {
       width: 3rem;
@@ -19,15 +30,18 @@
     }
   }
   &__nav {
-    flex-direction: row;
-    background-color: $link-color;
     color: $font-links-color;
 
     &--list {
+      background-color: $link-color;
       display: flex;
       justify-content: space-around;
       padding-top: 2rem;
       padding-bottom: 2rem;
+      @include desktop {
+        width: 20vw;
+        height: 10vh;
+      }
     }
   }
 }
