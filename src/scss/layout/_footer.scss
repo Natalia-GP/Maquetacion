@@ -1,13 +1,14 @@
 .footer {
   background-color: $primary-color;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   font-family: $text-font;
   color: $font-links-color;
   @include desktop {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    justify-content: space-between;
   }
   &__nav {
     display: flex;

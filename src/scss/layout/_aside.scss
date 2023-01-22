@@ -1,13 +1,19 @@
 .aside {
   @include desktop {
-    display: flex;
-    flex-direction: column;
-    background-color: yellow;
+    background-color: green;
+    margin-right: 6rem;
+    width: 27vw;
     height: 100vh;
     &__section {
       display: flex;
-      justify-content: space-between;
-      background-color: aquamarine;
+      flex-direction: column;
+      align-items: center;
+      &--div {
+        background-color: $primary-color;
+        margin: 2rem 2rem -1rem 2rem;
+        width: 15vw;
+        height: 20vh;
+      }
     }
   }
 }

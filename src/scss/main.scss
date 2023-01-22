@@ -9,11 +9,15 @@
 @import 'layout/footer';
 
 .main {
+  &__section {
+    height: 100vh;
+  }
+
   @include desktop {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    border-left: solid rgb(214, 210, 210) 6rem;
     &__section {
       display: flex;
       flex-direction: column;
