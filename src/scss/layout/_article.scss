@@ -1,0 +1,13 @@
+.article {
+  font-family: $text-font;
+  &__h2 {
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  &__text {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
