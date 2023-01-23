@@ -3,6 +3,7 @@
   flex-direction: column;
   font-family: $text-font;
   background-color: $primary-color;
+  width: 100vw;
   @include desktop {
     display: flex;
     flex-direction: row;
@@ -18,18 +19,19 @@
     @include desktop {
       display: flex;
       justify-content: left;
-      width: 50%;
+      width: 40%;
     }
 
     &--logo {
-      width: 4rem;
+      width: 3.4rem;
       @include desktop {
-        width: 5rem;
-        height: 5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 0.5rem;
       }
     }
     &--name {
-      font-size: 3rem;
+      font-size: 2rem;
       padding-top: 1rem;
     }
   }
@@ -40,8 +42,8 @@
       background-color: $link-color;
       display: flex;
       justify-content: space-around;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       font-size: 1.5rem;
       &--item {
         width: 2rem;

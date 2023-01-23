@@ -1,16 +1,22 @@
-.article {
-  font-family: $text-font;
-  height: 33vh;
-  &__h2 {
-    font-weight: bold;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    font-size: 3rem;
+.section {
+  &__titleBorder {
+    border-top: solid 0.2rem;
   }
-  &__text {
+  &__textBorder {
+    margin: 1rem 1rem 0 3rem;
+    border-left: solid grey 0.3rem;
     padding-left: 1rem;
-    padding-bottom: 1rem;
-    font-size: 2rem;
+  }
+  &__article {
+    font-family: $text-font;
+    margin: 1rem;
+    &--title {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin: 2rem;
+    }
+    &--text {
+      font-size: 1rem;
+    }
   }
 }
