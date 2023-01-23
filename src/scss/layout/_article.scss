@@ -14,9 +14,25 @@
       font-size: 1.5rem;
       font-weight: bolder;
       margin: 2rem;
-    }
-    &--text {
-      font-size: 1rem;
+
+      @include tablet {
+        display: flex;
+        justify-content: center;
+      }
+
+      @include desktop {
+        display: block;
+      }
+      &--text {
+        font-size: 1rem;
+
+        @include tablet {
+          text-align: center;
+        }
+        @include desktop {
+          text-align: left;
+        }
+      }
     }
   }
 }

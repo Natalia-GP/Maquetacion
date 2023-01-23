@@ -1,3 +1,4 @@
+@import 'core/_keyframes.scss';
 .header {
   display: flex;
   flex-direction: column;
@@ -38,24 +39,34 @@
   &__nav {
     color: $font-links-color;
 
-    &--list {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--ul {
       background-color: $link-color;
       display: flex;
-      justify-content: space-around;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
       font-size: 1.5rem;
-      &--item {
-        width: 2rem;
-      }
 
       @include desktop {
-        width: 40vw;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         margin-left: 3rem;
         margin-right: 3rem;
       }
     }
+  }
+}
+.nav__ul--item {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: aqua;
+    -webkit-animation: rotate-scale-up-diag-2 0.7s linear both;
+    animation: rotate-scale-up-diag-2 0.7s linear both;
   }
 }
