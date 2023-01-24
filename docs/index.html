@@ -3,66 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Prueba Create Natalia Gomez</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
-
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+    <header class="header">
+      <div class="header__title">
+        <img
+          class="header__title--logo"
+          src="./assets/images/logo.png"
+          alt="Logo"
+        />
+        <h1 class="header__title--name">LayoutDeEjemplo</h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav--ul">
+          <li class="nav__ul--item">Link1</li>
+          <li class="nav__ul--item">Link2</li>
+          <li class="nav__ul--item">Link3</li>
+          <li class="nav__ul--item">Link4</li>
         </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <article class="section__article ">
+          <h2 class="section__article--title">Lorem ipsum dolor sit amet</h2>
+          <p class="section__article--text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque alias, rem temporibus minima veritatis assumenda eaque, ipsum aliquid tempora impedit nam labore laudantium, delectus. Quae iste perspiciatis voluptate maxime fuga.</p>
+        </article>
+
+        <article class="section__article section__titleBorder">
+          <h2 class="section__article--title">Lorem ipsum dolor sit amet</h2>
+          <p class="section__article--text section__textBorder">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque alias, rem temporibus minima veritatis assumenda eaque, ipsum aliquid tempora impedit nam labore laudantium, delectus. Quae iste perspiciatis voluptate maxime fuga.</p>
+        </article>
+
+        <article class="section__article section__titleBorder">
+          <h2 class="section__article--title">Lorem ipsum dolor sit amet</h2>
+          <p class="section__article--text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque alias, rem temporibus minima veritatis assumenda eaque, ipsum aliquid tempora impedit nam labore laudantium, delectus. Quae iste perspiciatis voluptate maxime fuga</p>
+        </article>
+
+      </section>
+      <aside class="aside">
+        <section class="aside__section">
+          <div class="aside__section--div"></div>
+          <div class="aside__section--div"></div>
+        </section>
+      </aside>
+
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__nav--link">
+          <li class="nav__link--one">Link1</li>
+          <li class="nav__link--two">Link2</li>
+          <li class="nav__link--three">Link3</li>
+          <li class="nav__link--four">Link4</li>
         </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
+      </nav>
+      <div class="footer__social">
+        <ul class="footer__social--list">
+          <li class="social__list--icon">FB</li>
+          <li class="social__list--icon">TW</li>
+          <li class="social__list--icon">G+</li>
         </ul>
-      </main>
+      </div>
+    </footer>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
